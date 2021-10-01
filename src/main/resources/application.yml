@@ -1,0 +1,16 @@
+server:
+  address: localhost
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/draw4u?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: draw4u
+    password: draw4u
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
